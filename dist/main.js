@@ -3,7 +3,7 @@
 	$(document).ready(function(){
 
 		// Background Strech -----------------------------------------------
-		$(".banner-image").backstretch('dist/img/backs/back-blue1.jpg');
+		$(".banner-image").backstretch('dist/img/backs/banner.jpg');
 
 
 		// Fixed header -----------------------------------------------
