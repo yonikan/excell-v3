@@ -43,10 +43,4 @@ var SkinnedMesh = function (_THREE$Mesh) {
 
   return SkinnedMesh;
 }(THREE.Mesh);
-"use strict";
-
-var yoooni = "test";
-console.log(yoooni);
-
-var kanguuun = "test";
 //# sourceMappingURL=vendor/others/bundle.js.map

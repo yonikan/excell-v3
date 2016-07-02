@@ -1,25 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
     <%- include('head') %>
-  </head>
-  <body>
-    <div id="scrollToTop"></div>
 
-    <%- include('sections/section-header') %>
+  	<body class="no-trans">
 
-    <%- include('sections/section-intro') %>
+  		<!-- scrollToTop -->
+  		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
 
-    <%- include('sections/section-services') %>
+  		<!-- header start ------------------------------------------------------------------->
+      <%- include('sections/section-header') %>
+  		<!-- header end ------------------------------------------------------------------->
 
-    <script src="dist/vendor/js/jquery.min.js"></script>
-    <script src="dist/vendor/js/bootstrap.min.js"></script>
-    <script src="dist/vendor/js/jquery.flexslider-min.js"></script>
-    <script src="dist/vendor/js/jquery.fancybox.pack.js"></script>
-    <script src="dist/vendor/js/wow.js"></script>
-    <script src="dist/vendor/js/jquery.backstretch.min.js"></script>
-    
-    <script src="dist/main.js"></script>
-    <script src="dist/bundle.js"></script>
-  </body>
-</html>
+  		<!-- banner start ------------------------------------------------------------------->
+      <%- include('sections/section-banner') %>
+  		<!-- banner end ------------------------------------------------------------------->
+
+  		<!-- welcome start -->
+      <%- include('sections/section-welcome') %>
+  		<!-- section end -->
+
+
+  		<!-- services start ------------------------------------------------------------------>
+      <%- include('sections/section-services') %>
+  		<!-- section end ------------------------------------------------------------------->
+
+
+  		<!-- section detailed-->
+      <%- include('sections/section-detailed') %>
+  		<!-- section end ------------------------------------------------------------------->
+
+
+  		<!-- section about -->
+      <%- include('sections/section-about') %>
+  		<!-- section end ------------------------------------------------------------------->
+
+
+  		<!-- footer start ------------------------------------------------------------------->
+      <%- include('sections/section-footer') %>
+  		<!-- footer end ------------------------------------------------------------------->
+
+
+  		<!-- Modal -->
+  		<div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+  			<div class="modal-dialog modal-md">
+  				<div class="modal-content">
+  					<div class="modal-header">
+  						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  						<h4 class="modal-title" id="project-1-label">Project Title</h4>
+  					</div>
+  					<div class="modal-body">
+
+  						<div class="row">
+  							<div class="col-md-12">
+  								<img src="dist/img/portfolio-1.jpg" alt="">
+  								<br/>
+  								<h3>Project Description</h3>
+  								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt.</p>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="modal-footer">
+  						<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<!-- Modal end -->
+
+  		<!-- JavaScript -->
+  		<script type="text/javascript" src="dist/vendor/jquery.min.js"></script>
+  		<script type="text/javascript" src="dist/vendor/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="dist/vendor/jquery.backstretch.min.js"></script>
+  		<script type="text/javascript" src="dist/vendor/jquery.appear.js"></script>
+
+  		<script type="text/javascript" src="dist/bundle.js"></script>
+  		<script type="text/javascript" src="dist/main.js"></script>
+  	</body>
+  </html>
