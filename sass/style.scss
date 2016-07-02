@@ -1,13 +1,10 @@
 
-
 @import "globals";
-@import "nav";
+// @import "old-css";
 
 @import "sections/section-header";
+@import "sections/section-banner";
+@import "sections/section-welcome";
 @import "sections/section-services";
-@import "sections/section-intro";
-// @import "sections/section-detailed";
-// @import "sections/section-howto";
-// @import "sections/section-contact";
-
-// @import "sections/media-queries";
+@import "sections/section-detailed";
+@import "sections/section-footer";

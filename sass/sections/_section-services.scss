@@ -1,25 +1,13 @@
 
-/* service ---------------------------------- */
-.service {
-	margin-bottom: 40px;
+/* services ---------------------------------- */
 
-	.service-icon {
-		.fa {
-			font-size: 38px;
-			line-height: 48px;
-			padding: 20px;
-			width: 88px;
-			height: 88px;
-			border-radius: 50%;
-			color: $white;
-			background: $orange;
-		}
-	}
 
-	.service-content {
-		p {
-			font-size: 16px;
-		}
-	}
-
-}
+  /* block-lists
+  ---------------------------------- */
+  .block-list .media-left {
+  	width: 60px;
+  }
+  .block-list p{font-size: 14px;}
+  .block-list .fa {
+  padding: 20px;width: 88px;height: 88px;
+  border-radius: 50%;color: #FFFFFF;background: #1ABC9C;}

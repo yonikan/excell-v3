@@ -1,87 +1,154 @@
-.test {
-	color: #fff;
+
+/* header ---------------------------------- */
+.header {
+	color: #ffffff;
+	background-color: transparent;
+	padding: 10px 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
-/* ------------------------------------------------------------------------------
-	Header
--------------------------------------------------------------------------------*/
-#header {
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-	background: transparent;
-	// background: rgba(255, 255, 255, 0.35);
 
 
-	.header-content {
-		margin: 0 auto;
-		max-width: 1170px;
-		padding: 60px 0;
-		width: 100%;
-		// -moz-transition: padding 0.3s;
-		// -o-transition: padding 0.3s;
-		// -webkit-transition: padding 0.3s;
-		transition: padding 0.3s;
-	}
-	.logo {
-		float: left;
-		font-size:24px;
-		font-weight:700;
-		color: #000;
-		text-decoration:none;
-		text-transform:uppercase;
-		letter-spacing:7px;
-	}
-	&.fixed {
-		background-color: rgba(97, 97, 97, 0.9);
-
-		a {
-			color: #fff;
-		}
-
-		a:hover, a:active {
-			color: $orange;
-		}
-
-		.header-content {
-			border-bottom: 0;
-			padding: 25px 0;
-		}
-		.nav-toggle {
-			top: 18px;
-			color: #000;
-		}
-	}
+/* Logo, Site Name, Site Slogan
+---------------------------------- */
+.logo {
+	margin: 10px 0px 10px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.logo,
+.logo-section {
+	float: left;
+}
+.brand {
+	font-size: 38px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	padding: 10px 0;
+}
+.brand a {
+	color: #ffffff;
+	font-weight: bold;
+}
+.brand a:hover {
+	text-decoration: none;
+}
+.site-slogan {
+	font-size: 12px;
 }
 
 
 
-/* ------------------------------------------------------------------------------
-	Banner
--------------------------------------------------------------------------------*/
-.banner {
-	background: url(../dist/img/backs/banner.jpg) $turkiz;
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 1050px;
+
+/* Navigations
+----------------------------------------------------------------------------- */
+.header .navbar {
+	margin-bottom: 0;
+}
+.main-navigation .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+.main-navigation .navbar-default .navbar-nav > li > a {
+	color: #6BD4C9;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: 500;
+}
+.main-navigation .navbar-default .navbar-nav > li.active > a {
+	background-color: rgba(254, 255, 255, 0.16);
+	color: #FFFFFF;
+}
+.main-navigation .navbar-default .navbar-nav > li > a:hover,
+.main-navigation .navbar-default .navbar-nav > li.active > a:hover {
+	color: #1ABC9C;
 }
 
-.banner-text {
-	padding-top: 30%;
-	h1 {
-		color: #fff;
-		font-family: "Lato", Arial, sans-serif;
-		font-size: 36px;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
 
-	p {
-	 color: #fff;
-	 font-size: 16px;
-	 font-weight: 400;
-	 line-height: 24px;
-	 margin-top: 30px;
-	 margin-bottom: 80px;
- }
+
+/* Fixed Header
+----------------------------------------------------------------------------- */
+.fixed-header-on .header {
+	background-color: rgb(44, 62, 80);
+	padding: 10px 0;
+}
+.fixed-header-on .brand {
+	font-size: 24px;
+}
+.fixed-header-on .logo {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+@media (min-width:768px) {
+	.fixed-header-on .navbar-default .navbar-nav > li > a {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+@media (max-width:991px) {
+	.fixed-header-on .logo,
+	.fixed-header-on .brand,
+	.fixed-header-on .site-slogan {
+		display: none;
+	}
+}
+
+
+
+
+
+@media (min-width:768px) {
+	.main-navigation .navbar-default .navbar-nav > li > a {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
+@media (min-width:768px) and (max-width:991px) {
+	.main-navigation .container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar-nav {
+		float: left !important;
+	}
+}
+
+
+
+
+
+/* Pills
+---------------------------------- */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li > a:hover {
+	background-color: #1ABC9C;
+	border-color: #1ABC9C;
+	color: #ffffff;
+}
+.nav-pills > li > a {
+	border-radius: 0;
+	padding: 8px 20px;
+	border: 1px solid #cacaca;
+	color: #666666;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 300;
 }
