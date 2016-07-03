@@ -16,22 +16,6 @@
     padding: 0px;
     top: 0px;
 }
-.btn-outline {
-    color: #FFF;
-    padding: 12px 20px;
-    margin: 15px 0;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-shadow: none;
-    border: none;
-    text-transform: uppercase;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-}
 
 .content-1-4 {
 	padding: 0px;
@@ -67,14 +51,8 @@
 	margin-bottom: 20px;
 	font-size: 16px;
 }
-blockquote footer, blockquote small, blockquote .small{
-color:#fff;
-}
-
 
 /*	CONTENT BLOCK 1-4 MEDIA QUERIES
-/*----------------------------------------------------*/
-
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
@@ -115,30 +93,6 @@ color:#fff;
     float: left;
     margin-right: 10px;
 }
-
-
-
-
-
-/**
-  MEDIA QUERIES
-*/
-
-@media (max-width:767px) {
-	.header.navbar-fixed-top {
-		position: absolute;
-	}
-	.banner-caption h1 {
-    font-size: 36px;
-}
-	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: transparent;
-    background: #0E8275;
-}
-}
-
-
-
 
 
 

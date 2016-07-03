@@ -1,11 +1,5 @@
 
 /* modal main ---------------------------------- */
-
-
-
-
-/* Modals
----------------------------------- */
 .modal-content {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -26,6 +20,8 @@
 	opacity: 1;
 }
 
+
+/* modal media-queries ---------------------------------- */
 @media (min-width:1200px) {
 	.modal-lg {
 		width: 1140px;

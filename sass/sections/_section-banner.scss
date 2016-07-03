@@ -28,8 +28,6 @@
 	z-index: 2;
 }
 
-
-
 .banner-caption h1,
 .banner-caption h2,
 .banner-caption h3,
@@ -40,4 +38,12 @@
 }
 .banner-caption h1 {
 	font-size: 45px;
+}
+
+
+/* banner media-queries ---------------------------------- */
+@media (max-width:767px) {
+	.banner-caption h1 {
+    font-size: 36px;
+	}
 }

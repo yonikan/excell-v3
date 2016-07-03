@@ -74,7 +74,6 @@
 }
 
 
-
 /* Fixed Header
 ----------------------------------------------------------------------------- */
 .fixed-header-on .header {
@@ -90,6 +89,7 @@
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
 @media (min-width:768px) {
 	.fixed-header-on .navbar-default .navbar-nav > li > a {
 		padding-top: 20px;
@@ -103,8 +103,6 @@
 		display: none;
 	}
 }
-
-
 
 
 
@@ -130,25 +128,12 @@
 }
 
 
-
-
-
-/* Pills
----------------------------------- */
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus,
-.nav-pills > li > a:hover {
-	background-color: #1ABC9C;
-	border-color: #1ABC9C;
-	color: #ffffff;
-}
-.nav-pills > li > a {
-	border-radius: 0;
-	padding: 8px 20px;
-	border: 1px solid #cacaca;
-	color: #666666;
-	font-size: 12px;
-	text-transform: uppercase;
-	font-weight: 300;
+@media (max-width:767px) {
+	.header.navbar-fixed-top {
+		position: absolute;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+    background: #0E8275;
+	}
 }
